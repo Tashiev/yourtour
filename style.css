@@ -35,7 +35,6 @@ body {
   align-items: center;
   width: 100%;
   position: absolute;
-  /* top: -100; */
   left: 0;
   right: 0;
   z-index: 3;
@@ -142,6 +141,7 @@ button {
 .intro h1 {
   font-weight: 700;
   font-size: 96px;
+  /* font-size: clamp(34px, 0.3043rem + 3.4783vw, 96px); */
   color: white;
   line-height: 109%;
   letter-spacing: 2px;
@@ -198,7 +198,6 @@ button {
   flex-direction: column;
   align-items: center;
   margin-top: 135px;
-  margin-bottom: 100px;
 }
 
 /* Закоментил так как не было переноса на новую строку при адаптиве из-за фиксированный ширины */
@@ -272,24 +271,9 @@ button {
   border-radius: 50px;
   overflow: hidden;
   cursor: pointer;
-  width: 370px;
+  max-width: 450px;
   height: 531px;
 }
-
-/* .img__box {
-  width: 444px;
-  height: 100%;
-  max-height: 301px;
-  min-height: 110px;
-}
-
-.travel__picture {
-  width: 100%;
-  max-width: 444px;
-  min-width: 150px;
-
-  object-fit: cover;
-} */
 
 .tour__img {
   position: relative;
@@ -411,15 +395,16 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 135px;
+  margin-top: 134px;
+  height: auto;
 }
 
 .header__text {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* width: 100%; */
-  width: 529px;
+  width: 50%;
+  /* width: 529px; */
 }
 
 .block h2 {
@@ -430,16 +415,16 @@ button {
 }
 
 .block p {
-  width: 418px;
+  width: 100%;
   font-size: 20px;
 }
 
 .header__text_p {
-  margin-bottom: 99px;
+  margin-bottom: 100px;
   color: #a6a6a6;
   line-height: 142%;
-  margin-left: 20px;
-  margin-right: 20px;
+  /* margin-left: 20px;
+  margin-right: 20px; */
 }
 
 form {
@@ -643,7 +628,7 @@ textarea {
   line-height: 142%;
   letter-spacing: -0.2px;
   color: #a6a6a6;
-  width: 100% !important;
+  width: 100%;
 }
 
 .checkbox__text a {
@@ -743,7 +728,8 @@ textarea {
 }
 
 .feedback__block {
-  width: 570px;
+  /* width: 570px; */
+  width: 100%;
   height: 673px;
   background-color: #f4f0e9;
   border-radius: 50px;
@@ -751,7 +737,7 @@ textarea {
 }
 
 .context {
-  width: 490px;
+  width: 86%;
   margin: 40px;
   display: flex;
   flex-direction: column;
@@ -806,31 +792,11 @@ textarea {
 }
 
 .images__block {
-  width: 100%;
+  max-width: 100%;
 
   padding-right: 30px;
   padding-left: 30px;
 }
-
-/* .image__row {
-  display: grid;
-  gap: 30px;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-}
-
-.image__row2 {
-  display: grid;
-  gap: 30px;
-  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
-  margin: 30px 0 30px;
-}
-
-.image__row img,
-.image__row2 img {
-  max-width: 100%;
-  height: 301px;
-  border-radius: 50px;
-} */
 
 .img__box {
   width: 444px;
@@ -869,13 +835,15 @@ textarea {
 .image__row {
   display: flex;
   gap: 30px;
-  /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+  max-height: 301px;
+  min-height: 110px;
 }
 
 .image__row2 {
   display: flex;
   gap: 30px;
   margin: 30px 0 30px;
+  max-height: 301px;
 }
 
 .image__row img,
@@ -892,10 +860,10 @@ textarea {
   align-items: center;
 }
 
-.header__text_img p {
+/* .header__text_img p {
   margin-bottom: 98px;
   color: #a6a6a6;
-}
+} */
 
 .story__blocks {
   display: flex;
@@ -947,7 +915,7 @@ textarea {
   font-size: 20px;
   line-height: 142%;
   color: white;
-  width: 554px;
+  max-width: 554px;
 }
 
 .about__tour ul {
@@ -1092,13 +1060,12 @@ textarea {
     width: 442px;
   }
 
-  /* .choose__a__tour {
-    margin-top: 135px;
-    margin-bottom: 75px;
-  } */
-
   .header__nav2 {
     width: 408px;
+  }
+
+  .header__text {
+    width: 100%;
   }
 
   .img__text h3 {
@@ -1121,6 +1088,7 @@ textarea {
   .feedback__block {
     width: 450px;
     height: 841px;
+    /* height: 100%; */
     display: flex;
   }
 
@@ -1179,10 +1147,6 @@ textarea {
     display: none;
   } */
 
-  .header__text_img p {
-    margin-bottom: 100px;
-  }
-
   .footer__wrapper {
     padding-left: 0;
     padding-right: 0;
@@ -1205,8 +1169,8 @@ textarea {
 }
 
 @media (max-width: 768px) {
-  .container {
-    width: 90%;
+  .block {
+    margin-top: 74px;
   }
 
   .header__nav {
@@ -1221,12 +1185,27 @@ textarea {
     font-size: 18px;
   }
 
-  .choose__a__tour h2 {
-    font-size: 49px;
+  .choose__a__tour {
+    margin-top: 75px;
   }
 
+  .block h2,
+  .choose__a__tour h2 {
+    font-size: 48px;
+    letter-spacing: 1px;
+  }
+
+  .block p {
+    font-size: 16px;
+  }
+
+  .header__text_p {
+    margin-bottom: 60px;
+  }
+
+  /* адаптив блока с фото туров взят с 360 */
   .image__blocks {
-    /* grid-template-columns: repeat(1, 1fr); */
+    grid-template-columns: repeat(1, 1fr);
     gap: 18px;
     display: flex;
     flex-direction: column;
@@ -1234,9 +1213,61 @@ textarea {
     margin-top: 44px;
   }
 
-  .main__nav {
-    margin: 25px 25px 10px 25px;
+  .images__block {
+    margin-top: 0;
   }
+
+  .image__block,
+  .tour__img,
+  .overlay {
+    border-radius: 20px;
+  }
+
+  .image__block {
+    width: 318px;
+    height: 318px;
+  }
+
+  .name__and_price {
+    width: 268px;
+  }
+
+  .name__and_price p {
+    font-size: 16px;
+  }
+
+  .img__text h3 {
+    font-size: 23px;
+    margin-bottom: 13px;
+    line-height: 120%;
+    letter-spacing: 1px;
+  }
+
+  .img__text {
+    padding: 25px;
+  }
+
+  .detail__button {
+    width: 157px;
+    height: 42px;
+    font-size: 16px;
+    margin-left: -18px;
+    margin-bottom: -8px;
+    align-items: end;
+  }
+
+  .buttons__block button {
+    margin-bottom: 0px;
+  }
+  /* Конец адаптива блока с фото туров */
+
+  .choose__a__tour h2 {
+    font-size: 49px;
+  }
+
+  /* .main__nav {
+    margin: 25px 25px 10px 25px;
+  } */
 
   .choose__a__tour ul {
     display: flex;
@@ -1310,9 +1341,9 @@ textarea {
     margin-bottom: 8px;
   }
 
-  .button__block {
+  /* .button__block {
     margin-top: 30px;
-  }
+  } */
 
   .radio__label {
     font-size: 16px;
@@ -1330,7 +1361,7 @@ textarea {
   .contract__checkbox {
     display: flex;
     align-items: flex-start;
-    width: 278px;
+    width: 100%;
   }
 
   .checkbox__text {
@@ -1361,9 +1392,9 @@ textarea {
     margin-right: 10px;
   }
 
-  .form {
+  /* .form {
     margin-bottom: 45px;
-  }
+  } */
 
   .contract__checkbox label {
     align-items: start;
@@ -1378,18 +1409,23 @@ textarea {
   .feedback__blocks {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-top: 10px;
-    margin-bottom: -65px;
+    /* margin-bottom: -65px; */
   }
 
   .feedback__block {
-    width: 318px;
+    width: 100%;
     height: auto;
     border-radius: 20px;
   }
 
+  .context {
+    width: 100%;
+  }
+
   .feedback__text {
-    width: 277px;
+    width: 100%;
   }
 
   .context {
@@ -1439,12 +1475,27 @@ textarea {
   #eleventh__travel_picture {
     display: none;
   }
+
+  .image__row img,
+  .image__row2 img {
+    height: 206px;
+    border-radius: 20px;
+  }
+
   /* конец блока с картинками */
+
+  .about__tour li {
+    font-size: 16px;
+  }
+
+  .social__buttons_block {
+    display: none;
+  }
 
   /* начало блока с почтой для связи */
   .img__footer_block img {
-    width: 130px;
-    height: 133px;
+    width: 250px;
+    height: auto;
     border-radius: 20px;
   }
 
@@ -1452,7 +1503,8 @@ textarea {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 291px;
+    width: 100%;
+    align-items: center;
   }
 
   .email__block h3 {
@@ -1468,7 +1520,7 @@ textarea {
     font-size: 16px;
     line-height: 22.72px;
     text-align: center;
-    width: 291px;
+    width: 100%;
   }
   /* конец блока с почтой */
   /* начало футера */
@@ -1476,7 +1528,7 @@ textarea {
     width: 100%;
     height: 95px;
     padding: 0;
-    margin-top: -60px;
+    /* margin-top: -60px; */
   }
 
   .footer__text {
@@ -1486,8 +1538,16 @@ textarea {
     margin-top: 0 !important;
   }
 
+  .footer__social {
+    margin-top: 7px;
+  }
+
+  /* .footer__text p {
+    margin-top: 7px;
+  } */
+
   .footer__contact {
-    margin-top: 42px;
+    /* margin-top: 42px; */
     flex-direction: column;
     gap: 28px;
   }
@@ -1500,7 +1560,14 @@ textarea {
   .footer__social_link {
     margin-right: 15px;
     font-size: 16px;
-    align-items: end;
+    /* align-items: end; */
+    align-items: center;
+  }
+
+  .footer__social {
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 
   .footer__social img {
@@ -1541,6 +1608,10 @@ textarea {
     width: 390px;
   }
 
+  .main__nav {
+    margin-top: 24px;
+  }
+
   .main__nav a {
     font-size: 16px;
   }
@@ -1551,84 +1622,48 @@ textarea {
     letter-spacing: 1px;
   }
 
-  .choose__a__tour {
-    margin-top: 105px;
-    /* margin-bottom: 75px; */
+  /* новое */
+
+  .header__text_p {
+    margin-bottom: 40px;
   }
 
-  /* все ниже скопировано с 360 */
-
-  .image__blocks {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 18px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 44px;
+  .image__row,
+  .image__row2 {
+    gap: 10px;
+    width: 100%;
   }
 
-  .images__block {
-    margin-top: 0;
-  }
-
-  .image__block,
-  .tour__img,
-  .overlay {
+  .image__row img,
+  .image__row2 img {
+    height: 158px;
     border-radius: 20px;
   }
 
-  .image__block {
-    width: 318px;
-    height: 318px;
+  .image__row2 {
+    margin: 12px 0 12px;
   }
 
-  .name__and_price {
-    width: 268px;
+  .about__tour {
+    margin: 45px;
   }
 
-  .name__and_price p {
-    font-size: 16px;
-  }
-
-  .img__text h3 {
-    font-size: 23px;
-    margin-bottom: 13px;
-    line-height: 120%;
-    letter-spacing: 1px;
-  }
-
-  .img__text {
-    padding: 25px;
-  }
-
-  .detail__button {
-    width: 157px;
-    height: 42px;
-    font-size: 16px;
-    margin-left: -18px;
-    margin-bottom: -8px;
-    align-items: end;
-  }
-
-  .buttons__block button {
-    margin-bottom: 0px;
-  }
-  /* новое */
-
-  .block {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
-    margin-top: 75px;
+  .story__block {
+    border-radius: 20px;
   }
 }
 
 @media (max-width: 360px) {
   .container {
     width: 90%;
-    margin-top: 33px;
-    padding-left: 20px;
-    padding-right: 20px;
+    /* margin-top: 75px; */
+    padding: 0;
+    /* padding-left: 20px;
+    padding-right: 20px; */
+  }
+
+  .container11 {
+    margin-top: 26px !important;
   }
 
   .header.fixed {
@@ -1647,6 +1682,7 @@ textarea {
     display: flex;
     justify-content: center;
     column-gap: 10px;
+    row-gap: 4px;
   }
 
   .image__blocks {
@@ -1686,7 +1722,7 @@ textarea {
     width: 360px;
     line-height: 38.08px;
     letter-spacing: 1px;
-    margin-top: 51px;
+    margin-top: 83px;
   }
 
   .intro p {
@@ -1791,14 +1827,14 @@ textarea {
     margin-bottom: 20px;
   }
 
-  .block p {
-    width: 318px;
+  .contract__checkbox p {
+    width: 80% !important;
     font-size: 16px;
   }
 
-  .header__text_p {
+  /* .header__text_p {
     margin-bottom: 40px;
-  }
+  } */
 
   form {
     margin: 20px 20px 40px 20px;
@@ -1812,9 +1848,9 @@ textarea {
     font-size: 16px;
   }
 
-  .client__name {
+  /* .client__name {
     width: 278px;
-  }
+  } */
 
   input[type="text"],
   input[type="email"],
@@ -1877,7 +1913,7 @@ textarea {
   .contract__checkbox {
     display: flex;
     align-items: flex-start;
-    width: 278px;
+    /* width: 278px; */
   }
 
   .checkbox__text {
@@ -1888,7 +1924,7 @@ textarea {
 
   .button__block {
     display: flex;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     text-align: left;
   }
 
@@ -1908,9 +1944,9 @@ textarea {
     margin-right: 10px;
   }
 
-  .form {
+  /* .form {
     margin-bottom: 45px;
-  }
+  } */
 
   .contract__checkbox label {
     align-items: start;
@@ -1924,7 +1960,7 @@ textarea {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
-    margin-bottom: -65px;
+    /* margin-bottom: -65px; */
   }
 
   .feedback__block {
@@ -1988,28 +2024,27 @@ textarea {
   }
 
   .image__row {
-    gap: 10px;
+    /* gap: 10px; */
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 
   .image__row2 {
-    gap: 10px;
+    /* gap: 10px; */
     grid-template-columns: repeat(auto-fit, minmax(99px, 1fr));
-    margin: 18px 0 18px;
   }
 
   .image__row img,
   .image__row2 img {
     height: 110px;
-    border-radius: 20px;
+    /* border-radius: 20px; */
   }
 
-  .images__block {
-    margin-bottom: 44px;
-  }
+  /* .images__block {
+    margin-bottom: 38px;
+  } */
 
   .image__blocks {
-    margin-top: 45px;
+    margin-top: 52px;
   }
 
   .about__tour {
@@ -2036,11 +2071,11 @@ textarea {
     width: 150px;
   }
 
-  .about__tour p {
+  /* .about__tour p {
     font-size: 16px;
     line-height: 22.82px;
     width: 263px;
-  }
+  } */
 
   .about__tour li {
     font-size: 16px;
@@ -2052,22 +2087,18 @@ textarea {
     margin-top: 24px;
   }
 
-  .social__buttons_block {
-    display: none;
-  }
-
   .img__footer_block img {
     width: 130px;
     height: 133px;
     border-radius: 20px;
   }
 
-  .email__block {
+  /* .email__block {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 291px;
-  }
+  } */
 
   .email__block h3 {
     font-size: 23px;
@@ -2081,7 +2112,7 @@ textarea {
   .link__text {
     font-size: 16px;
     line-height: 22.72px;
-    text-align: center;
+    /* text-align: center; */
     width: 291px;
   }
 
@@ -2089,20 +2120,26 @@ textarea {
     width: 100%;
     height: 95px;
     padding: 0;
-    margin-top: -60px;
+    /* margin-top: -60px; */
   }
 
   .footer__text {
     display: flex;
     flex-direction: column;
     padding: 21px 21.5px 21px 21.5px;
-    margin-top: 0 !important;
+    /* margin-top: 0 !important; */
+    width: 100%;
   }
 
   .footer__contact {
-    margin-top: 42px;
+    /* margin-top: 42px; */
     flex-direction: column;
     gap: 28px;
+    /* margin-bottom: 75px; */
+  }
+
+  .footer {
+    margin-top: 75px !important;
   }
 
   .copyright {
@@ -2113,7 +2150,7 @@ textarea {
   .footer__social_link {
     margin-right: 15px;
     font-size: 16px;
-    align-items: end;
+    /* align-items: end; */
   }
 
   .footer__social img {
