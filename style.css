@@ -22,7 +22,7 @@ body {
   text-align: center;
 }
 
-.container11 {
+.header__block {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -436,7 +436,7 @@ select {
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
-  background: url("./images/Rectangle.png") no-repeat right 23.59px center;
+  background: url("./assets/Rectangle.png") no-repeat right 23.59px center;
   background-size: 18px;
 }
 
@@ -467,11 +467,6 @@ textarea:focus {
   border-color: #a6a6a6;
 }
 
-.error_text {
-  color: red;
-  font-size: 14px;
-}
-
 input[type="date"] {
   text-transform: uppercase;
 }
@@ -482,10 +477,6 @@ input[type="date"] {
 }
 
 ::placeholder {
-  color: #a6a6a6;
-}
-
-.date-placeholder {
   color: #a6a6a6;
 }
 
@@ -926,6 +917,10 @@ textarea {
 .story__block:hover .detail__button:active {
   background-color: #efa501;
   border-radius: 50px;
+}
+
+.link__social:active {
+  color: #efa501;
 }
 
 .footer__contact {
@@ -1583,7 +1578,7 @@ textarea {
     padding: 0;
   }
 
-  .container11 {
+  .header__block {
     margin-top: 26px !important;
   }
 
@@ -1671,7 +1666,7 @@ textarea {
 
   .direction {
     margin-bottom: 8px;
-  } 
+  }
 
   .feedback__text {
     width: 277px;

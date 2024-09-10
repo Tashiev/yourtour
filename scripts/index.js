@@ -8,7 +8,7 @@ const phoneElement = document.querySelector(".header___phone_block");
 const liElements = document.querySelectorAll(".header__nav ul li");
 const anchors = document.querySelectorAll('a[href*="#"]');
 
-const container11 = document.querySelector(".container11");
+const header__block = document.querySelector(".header__block");
 
 const email = document.getElementById("email");
 
@@ -20,13 +20,13 @@ const phoneMask = new IMask(phoneInput, {
 const email_check =
   /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
 
-email.addEventListener("blur", () => {
-  if (!email.value.match(email_check)) {
-    window.alert(
-      "Неправильный формат почты! Введите почту в указанном формате."
-    );
-  }
-});
+// email.addEventListener("blur", () => {
+//   if (!email.value.match(email_check)) {
+//     window.alert(
+//       "Неправильный формат почты! Введите почту в указанном формате."
+//     );
+//   }
+// });
 
 document.onscroll = function () {
   let scroll = window.scrollY;
@@ -38,7 +38,7 @@ document.onscroll = function () {
     phone.classList.add("fixedPhoneColor");
     phoneElement.style.color = "black";
     logoElement.style.color = "black";
-    container11.style.marginTop = "0";
+    header__block.style.marginTop = "0";
     liElements.forEach((li) => {
       li.classList.add("black");
     });
@@ -48,7 +48,7 @@ document.onscroll = function () {
     phone.classList.remove("fixedPhoneColor");
     logoElement.style.color = "white";
     phoneElement.style.color = "white";
-    container11.style.marginTop = "21px";
+    header__block.style.marginTop = "21px";
     liElements.forEach((li) => {
       li.classList.remove("black");
     });
@@ -61,7 +61,7 @@ for (let anchor of anchors) {
     const blockID = anchor.getAttribute("href");
     const element = document.querySelector(blockID);
     const elementPosition = element.getBoundingClientRect().top;
-    const offsetPosition = elementPosition - headerH - 50;
+    const offsetPosition = elementPosition - headerH + 350;
 
     window.scrollBy({
       top: offsetPosition,
@@ -70,41 +70,41 @@ for (let anchor of anchors) {
   });
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  const select = document.getElementById("city-select");
+// document.addEventListener("DOMContentLoaded", function () {
+//   const select = document.getElementById("city-select");
 
-  function changeColor() {
-    if (select.value === "") {
-      select.style.color = "#A6A6A6";
-    } else {
-      select.style.color = "black";
-    }
-  }
+//   function changeColor() {
+//     if (select.value === "") {
+//       select.style.color = "#A6A6A6";
+//     } else {
+//       select.style.color = "black";
+//     }
+//   }
 
-  select.addEventListener("change", changeColor);
-  changeColor();
-});
+//   select.addEventListener("change", changeColor);
+//   changeColor();
+// });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const startDateInput = document.getElementById("startDate");
-  const finishDateInput = document.getElementById("finishDate");
+// document.addEventListener("DOMContentLoaded", function () {
+//   const startDateInput = document.getElementById("startDate");
+//   const finishDateInput = document.getElementById("finishDate");
 
-  function updatePlaceholderColor(input) {
-    if (!input.value) {
-      input.classList.add("date-placeholder");
-    } else {
-      input.classList.remove("date-placeholder");
-    }
-  }
+//   function updatePlaceholderColor(input) {
+//     if (!input.value) {
+//       input.classList.add("date-placeholder");
+//     } else {
+//       input.classList.remove("date-placeholder");
+//     }
+//   }
 
-  startDateInput.addEventListener("input", function () {
-    updatePlaceholderColor(startDateInput);
-  });
+//   startDateInput.addEventListener("input", function () {
+//     updatePlaceholderColor(startDateInput);
+//   });
 
-  finishDateInput.addEventListener("input", function () {
-    updatePlaceholderColor(finishDateInput);
-  });
+//   finishDateInput.addEventListener("input", function () {
+//     updatePlaceholderColor(finishDateInput);
+//   });
 
-  updatePlaceholderColor(startDateInput);
-  updatePlaceholderColor(finishDateInput);
-});
+//   updatePlaceholderColor(startDateInput);
+//   updatePlaceholderColor(finishDateInput);
+// });
