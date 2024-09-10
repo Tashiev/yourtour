@@ -127,7 +127,7 @@ button {
       rgba(0, 0, 0, 0.4) 0%,
       rgba(0, 0, 0, 0) 100%
     ),
-    url(./images/header-img.svg);
+    url(../images/header/header-img.svg);
   background-color: rgba(0, 0, 0, 0.3);
   background-repeat: no-repeat;
   background-size: cover;
