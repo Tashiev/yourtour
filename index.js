@@ -7,16 +7,10 @@ const logoElement = document.querySelector(".header__logo a");
 const phoneElement = document.querySelector(".header___phone_block");
 const liElements = document.querySelectorAll(".header__nav ul li");
 const anchors = document.querySelectorAll('a[href*="#"]');
-// const searchButton = document.querySelector(".intro__button");
-//const detailButton = document.querySelectorAll(".detail__button");
-// const findButton = document.querySelector(".find__button");
-// const resetButton = document.querySelector(".reset__button");
 
 const container11 = document.querySelector(".container11");
 
-// const form = document.getElementById("form");
 const email = document.getElementById("email");
-// const email_error = document.getElementById("email_error");
 
 const phoneInput = document.querySelector(".phone");
 const phoneMask = new IMask(phoneInput, {
@@ -45,7 +39,6 @@ document.onscroll = function () {
     phoneElement.style.color = "black";
     logoElement.style.color = "black";
     container11.style.marginTop = "0";
-    // logoElement.style.backgroundImage = "url('./images/YourTourBlack.png')";
     liElements.forEach((li) => {
       li.classList.add("black");
     });
@@ -54,7 +47,6 @@ document.onscroll = function () {
     headerNav.forEach((nav) => nav.classList.remove("fixed2"));
     phone.classList.remove("fixedPhoneColor");
     logoElement.style.color = "white";
-    // logoElement.style.backgroundImage = "url('./images/YourTour.png')";
     phoneElement.style.color = "white";
     container11.style.marginTop = "21px";
     liElements.forEach((li) => {
