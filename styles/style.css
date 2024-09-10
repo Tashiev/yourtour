@@ -167,7 +167,7 @@ button {
 .intro__button:hover {
   background-color: #efa501;
   color: white;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .intro__button:hover a {
@@ -316,10 +316,8 @@ button {
   transition: 0.3s;
 }
 
-.image__block:hover .detail__button:active {
+.image__block:active .detail__button {
   background-color: #efa501;
-  border-radius: 50px;
-  transition: 0.3s;
 }
 
 .img__text h3 {
@@ -436,7 +434,7 @@ select {
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
-  background: url("./assets/Rectangle.png") no-repeat right 23.59px center;
+  background: url("../assets/Rectangle.png") no-repeat right 23.59px center;
   background-size: 18px;
 }
 
@@ -915,8 +913,11 @@ textarea {
 }
 
 .story__block:hover .detail__button:active {
-  background-color: #efa501;
   border-radius: 50px;
+}
+
+.story__block:active .detail__button {
+  background-color: #efa501;
 }
 
 .link__social:active {
