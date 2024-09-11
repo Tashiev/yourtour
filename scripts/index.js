@@ -5,7 +5,7 @@ const headerNav = document.querySelectorAll(".nav__names");
 const phone = document.querySelector(".header___phone_number");
 const logoElement = document.querySelector(".header__logo a");
 const phoneElement = document.querySelector(".header___phone_block");
-const liElements = document.querySelectorAll(".header__nav ul li");
+const liElements = document.querySelectorAll(".nav__link");
 const anchors = document.querySelectorAll('a[href*="#"]');
 
 const header__block = document.querySelector(".header__block");
@@ -41,6 +41,7 @@ document.onscroll = function () {
     header__block.style.marginTop = "0";
     liElements.forEach((li) => {
       li.classList.add("black");
+      li.style.color = "black";
     });
   } else {
     header.classList.remove("fixed");
@@ -51,6 +52,7 @@ document.onscroll = function () {
     header__block.style.marginTop = "21px";
     liElements.forEach((li) => {
       li.classList.remove("black");
+      li.style.color = "white";
     });
   }
 };

@@ -22,13 +22,6 @@ body {
   text-align: center;
 }
 
-.header__block {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 21px;
-}
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -41,6 +34,13 @@ body {
   transition: all 0.2s ease;
 }
 
+.header__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 21px;
+}
+
 .header.fixed {
   position: fixed;
   background-color: #f3efe899;
@@ -50,7 +50,7 @@ body {
   margin-top: 0;
 }
 
-.nav__names.fixed2 {
+.nav__link.fixed2 {
   color: black;
 }
 
@@ -58,44 +58,41 @@ body {
   color: black;
 }
 
-.header__nav2 {
+.nav__link.black::after {
+  background-color: black;
+}
+
+/* тут надо поработать с фиксированной шириной */
+.nav__list {
   width: 468px;
   display: flex;
   justify-content: space-between;
 }
 
-.header__nav ul li {
-  display: inline-block;
+.nav__item {
   list-style: none;
-  font-size: 20px;
-  line-height: 28.4px;
-  color: white;
-  font-weight: 400;
-  position: relative;
 }
 
-.header__nav ul li::after {
+.nav__link {
+  position: relative;
+  text-decoration: none;
+  color: white;
+}
+
+.nav__link::after {
   content: "";
   position: absolute;
-  bottom: -2px;
-  left: 0;
   width: 100%;
   height: 2px;
   background-color: white;
+  bottom: -2px;
+  left: 0;
   transform: scaleX(0);
+  transition: transform 0.3s ease;
 }
 
-.header__nav ul li.black::after {
-  background-color: black;
-}
-
-button {
-  cursor: pointer;
-}
-
-.header__nav ul li:hover::after {
+.nav__link:hover::after {
   transform: scaleX(1);
-  transform-origin: bottom;
 }
 
 .header___phone_block:hover {
@@ -110,15 +107,16 @@ button {
 }
 
 .header__logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
   font-weight: 700;
   font-size: 40px;
   letter-spacing: 2.6px;
 }
 
-.header__logo a {
-  display: block;
-  width: 100%;
-  height: 100%;
+button {
+  cursor: pointer;
 }
 
 .intro {
@@ -1021,7 +1019,7 @@ textarea {
     width: 442px;
   }
 
-  .header__nav2 {
+  .nav__list {
     width: 408px;
   }
 
@@ -1741,3 +1739,30 @@ textarea {
     margin-top: 75px !important;
   }
 }
+
+/* <header class="header js-header">
+  <div class="header__container">
+    <div class="header__logo">
+      <a href="#headers" class="header__logo-link">YourTour</a>
+    </div>
+    <nav class="header__nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#tours" class="nav__link">Туры</a>
+        </li>
+        <li class="nav__item">
+          <a href="#create__tour" class="nav__link">Создать тур</a>
+        </li>
+        <li class="nav__item">
+          <a href="#reviews" class="nav__link">Отзывы</a>
+        </li>
+        <li class="nav__item">
+          <a href="#stories" class="nav__link">Истории</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__phone-block">
+      <a class="header__phone-number" href="tel:+79999999999">+7 999 999 99 99</a>
+    </div>
+  </div>
+</header> */
