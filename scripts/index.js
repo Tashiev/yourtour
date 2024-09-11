@@ -4,7 +4,7 @@ const headerH = 450;
 const headerNav = document.querySelectorAll(".nav__names");
 const phone = document.querySelector(".header___phone_number");
 const logoElement = document.querySelector(".header__logo a");
-const phoneElement = document.querySelector(".header___phone_block");
+const phoneElement = document.querySelector(".header___phone");
 const liElements = document.querySelectorAll(".nav__link");
 const anchors = document.querySelectorAll('a[href*="#"]');
 
