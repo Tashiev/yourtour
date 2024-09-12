@@ -12,7 +12,8 @@ const header__block = document.querySelector(".header__block");
 
 const email = document.getElementById("email");
 
-const phoneInput = document.querySelector(".phone");
+const phoneInput = document.querySelector(".form__input-phone");
+// const phoneInput = document.querySelector(".phone");
 const phoneMask = new IMask(phoneInput, {
   mask: "+{7}(000)000-00-00",
 });

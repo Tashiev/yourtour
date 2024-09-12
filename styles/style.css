@@ -1,680 +1,10 @@
 @import "./body/body.css";
 @import "./header/header.css";
-
-/* * {
-  font-family: "Roboto", sans-serif;
-  color: black;
-  font-size: 20px;
-  font-weight: 400;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  border: none;
-}
-
-body {
-  background-color: #f9f7f4;
-} */
-
-/* .container {
-  max-width: 1170px;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-} */
-
-/* .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  right: 0;
-  z-index: 3;
-  transition: all 0.2s ease;
-}
-
-.header__block {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 21px;
-}
-
-.header.fixed {
-  position: fixed;
-  background-color: #f3efe899;
-  backdrop-filter: blur(5px);
-  height: 88px;
-  padding-top: 0;
-  margin-top: 0;
-}
-
-.header___phone_number.fixedPhoneColor {
-  color: black;
-}
-
-.nav__link.black::after {
-  background-color: black;
-}
-
-.nav__list {
-  width: 468px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.nav__item {
-  list-style: none;
-}
-
-.nav__link {
-  position: relative;
-  text-decoration: none;
-  color: white;
-}
-
-.nav__link::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: white;
-  bottom: -2px;
-  left: 0;
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-}
-
-.nav__link:hover::after {
-  transform: scaleX(1);
-}
-
-.header___phone:hover {
-  text-decoration: underline;
-  color: white;
-}
-
-.header___phone a,
-.header__logo a {
-  color: white;
-  text-decoration: none;
-}
-
-.header__logo a {
-  display: block;
-
-  font-weight: 700;
-  font-size: 40px;
-  letter-spacing: 2.6px;
-} */
-
-button {
-  cursor: pointer;
-}
-
-.intro {
-  background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.4) 0%,
-      rgba(0, 0, 0, 0) 100%
-    ),
-    url(../images/header/header-img.svg);
-  background-color: rgba(0, 0, 0, 0.3);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 208px 0 400px;
-  position: relative;
-  max-width: 100%;
-  height: 831px;
-}
-
-.intro h1 {
-  font-weight: 700;
-  font-size: 96px;
-  color: white;
-  line-height: 109%;
-  letter-spacing: 2px;
-  width: 768px;
-}
-
-.intro p {
-  font-weight: 400;
-  font-size: 20px;
-  color: white;
-  line-height: 142%;
-  width: 562px;
-  margin: 50px auto;
-}
-
-.intro__button {
-  cursor: pointer;
-  padding: 4.5px 20px;
-  background-color: white;
-  border-radius: 10px;
-  align-items: center;
-}
-
-.intro__button:hover {
-  background-color: #efa501;
-  color: white;
-  transition: 0.3s;
-}
-
-.intro__button:hover a {
-  color: white;
-  transition: 0.3s;
-}
-
-.intro__button:active {
-  background-color: #f8e6be;
-}
-
-.intro__button:active a {
-  color: black;
-}
-
-.intro__button a {
-  font-size: 17px;
-  font-weight: 400;
-  letter-spacing: -1%;
-  line-height: 142%;
-  text-decoration: none;
-}
-
-.choose__a__tour {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 135px;
-}
-
-.main__nav {
-  margin-top: 35px;
-}
-
-.choose__a__tour ul {
-  display: flex;
-  justify-content: space-evenly;
-  column-gap: 30px;
-  width: 100%;
-}
-
-.choose__a__tour ul li {
-  font-size: 23px;
-  font-weight: 700;
-  list-style: none;
-  text-align: center;
-}
-
-.choose__a__tour h2 {
-  font-size: 59px;
-  font-weight: 700;
-  line-height: 124%;
-}
-
-.main__nav a {
-  font-size: 23px;
-  font-weight: 700;
-  position: relative;
-  cursor: pointer;
-}
-
-.main__nav_tour_active {
-  line-height: 22.72px;
-  color: #efa501;
-  border-bottom: 2px solid #efa501;
-}
-
-.main__nav_tour:hover {
-  border-bottom: 2px solid black;
-  transition: 0.3s;
-}
-
-.main__nav_tour:active {
-  border-bottom: 2px solid #efa501;
-  color: #efa501;
-}
-
-.image__blocks {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  margin-top: 106px;
-}
-
-.image__block {
-  position: relative;
-  text-align: center;
-  border-radius: 50px;
-  overflow: hidden;
-  cursor: pointer;
-  max-width: 450px;
-  height: 531px;
-}
-
-.tour__img {
-  position: relative;
-  z-index: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 50px;
-  transition: transform 300ms ease;
-  object-fit: cover;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    360deg,
-    rgba(0, 0, 0, 0.4) 0%,
-    rgba(0, 0, 0, 0.06) 48.44%,
-    rgba(0, 0, 0, 0.5) 100%
-  );
-  border-radius: 50px;
-  z-index: 1;
-  pointer-events: none;
-}
-
-.img__text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: absolute;
-  z-index: 2;
-  color: #fff;
-  width: 100%;
-  height: 100%;
-  padding: 50px 50px 41px 50px;
-  box-sizing: border-box;
-  text-align: left;
-  bottom: 0;
-}
-
-.image__block:hover .tour__img {
-  transform: scale(1.2);
-  z-index: 0;
-}
-
-.image__block:hover .detail__button {
-  background-color: #286562;
-  border-radius: 50px;
-  transition: 0.3s;
-}
-
-.image__block:active .detail__button {
-  background-color: #efa501;
-}
-
-.img__text h3 {
-  color: white;
-  font-size: 35px;
-  font-weight: 500;
-  margin-bottom: 18px;
-  line-height: 122%;
-}
-
-.name__and_price {
-  width: 200px;
-}
-
-.name__and_price p {
-  font-size: 17px;
-  font-weight: 400;
-  color: white;
-}
-
-.detail__button_block {
-  margin-bottom: -7px;
-}
-
-.detail__button {
-  width: 200px;
-  height: 42px;
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  background: none;
-  color: white;
-  font-size: 23px;
-  font-weight: bold;
-  border: none;
-  margin: 0;
-  margin-left: -20px;
-}
-
-.detail__button img {
-  margin-left: 16px;
-}
-
-.vector {
-  margin: 12px 0 7px 20px;
-}
-
-.block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 134px;
-  height: auto;
-}
-
-.header__text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 50%;
-}
-
-.block h2 {
-  font-size: 59px;
-  font-weight: 700;
-  line-height: 124%;
-  margin-bottom: 30px;
-}
-
-.block p {
-  width: 100%;
-  font-size: 20px;
-}
-
-.header__text_p {
-  margin-bottom: 100px;
-  color: #a6a6a6;
-  line-height: 142%;
-}
-
-form {
-  margin: 72px 70px 70px 70px;
-}
-
-.form {
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  border-radius: 50px;
-}
-
-.main__form_container {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.inputs_row {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  gap: 30px;
-}
-
-.input__block {
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 calc(50% - 15px);
-}
-
-select {
-  appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  background: url("../assets/Rectangle.png") no-repeat right 23.59px center;
-  background-size: 18px;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="date"],
-select {
-  width: 100%;
-  border: 1px solid #f4f0e9;
-  border-radius: 10px;
-  resize: vertical;
-  cursor: pointer;
-  background-color: #f9f7f4;
-  margin-bottom: 35px;
-  height: 68px;
-  padding: 20px;
-  outline: none;
-  resize: none;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="tel"]:focus,
-input[type="date"]:focus,
-select:focus,
-textarea:focus {
-  border-color: #a6a6a6;
-}
-
-input[type="date"] {
-  text-transform: uppercase;
-}
-
-.direction {
-  text-align: left;
-  margin-bottom: 10px;
-}
-
-::placeholder {
-  color: #a6a6a6;
-}
-
-label {
-  font-size: 20px;
-}
-
-.input__comment {
-  flex-grow: 1;
-}
-
-textarea {
-  width: 100%;
-  height: 152px;
-  padding: 12px;
-  border: 1px solid #f4f0e9;
-  border-radius: 10px;
-  resize: vertical;
-  background-color: #f9f7f4;
-  margin-bottom: 30px;
-  resize: none;
-}
-
-.age__question {
-  margin-bottom: 34px;
-}
-
-.age__question fieldset {
-  border: none;
-  padding: 0;
-  margin: 0;
-}
-
-.age__question legend {
-  font-size: 20px;
-  margin-bottom: 12px;
-  display: block;
-}
-
-.radio__options {
-  display: flex;
-  gap: 31px;
-}
-
-.radio__label {
-  display: flex;
-  align-items: center;
-  font-size: 20px;
-}
-
-.radio__label input[type="radio"] {
-  display: none;
-}
-
-.radio__label .custom__radio {
-  width: 26px;
-  height: 26px;
-  border: 2px solid #000;
-  border-radius: 50%;
-  margin-right: 11px;
-  position: relative;
-}
-
-.radio__label input[type="radio"]:checked + .custom__radio {
-  background-color: #fff;
-}
-
-.radio__label input[type="radio"]:checked + .custom__radio::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 12px;
-  height: 12px;
-  background-color: #000;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.radio__label input[type="radio"] + .custom-radio::before {
-  content: "";
-  display: block;
-  width: 10px;
-  height: 10px;
-  background-color: transparent;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.radio__label a {
-  margin-left: 5px;
-}
-
-.contract__checkbox {
-  display: flex;
-  align-items: center;
-}
-
-.contract__checkbox a {
-  color: black;
-  font-size: 17px;
-}
-
-.contract__checkbox label {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-
-.contract__checkbox p {
-  font-size: 17px;
-  line-height: 142%;
-  letter-spacing: -0.2px;
-  color: #a6a6a6;
-  width: 100%;
-}
-
-.checkbox__text a {
-  text-decoration: none;
-}
-
-.checkbox__text a:hover {
-  text-decoration: underline;
-  transition: 0.3s;
-}
-
-.contract__checkbox input[type="checkbox"] {
-  display: none;
-}
-
-.custom__checkbox {
-  width: 26px;
-  height: 26px;
-  border: 2px solid #000;
-  border-radius: 5px;
-  margin-right: 19px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.custom__checkbox::after {
-  content: "";
-  width: 6px;
-  height: 10px;
-  border: solid #000;
-  border-width: 0 3px 3px 0;
-  transform: rotate(45deg);
-  display: none;
-  margin-bottom: 4px;
-}
-
-.contract__checkbox
-  input[type="checkbox"]:checked
-  + label
-  .custom__checkbox::after {
-  display: block;
-}
-
-.button__block {
-  margin-top: 33px;
-  text-align: left;
-}
-
-.button__block button {
-  width: 235px;
-  height: 58px;
-  border-radius: 10px;
-  font-size: 20px;
-  font-weight: 400;
-  cursor: pointer;
-}
-
-.find__button {
-  background-color: #286562;
-  color: white;
-  margin-right: 26px;
-}
-
-.find__button:hover {
-  background-color: #3b7e7b;
-  transition: 0.3s;
-}
-
-.find__button:active {
-  background-color: #627f7e;
-}
-
-.reset__button {
-  background-color: #e0f0e5;
-  color: #286562;
-}
-
-.reset__button:hover {
-  background-color: #f1f3f2;
-  transition: 0.3s;
-}
-
-.reset__button:active {
-  background-color: #d9dfdb;
-}
+@import "./intro/intro.css";
+@import "./chose-tour/choose-tour-title/chose-tour.css";
+@import "./chose-tour/image-block/image-block.css";
+@import "./section-title/title.css";
+@import "./form/form.css";
 
 .feedback__blocks {
   width: 100%;
@@ -805,13 +135,6 @@ textarea {
   max-width: 100%;
   height: 301px;
   border-radius: 50px;
-}
-
-.header__text_img {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
 }
 
 .story__blocks {
@@ -1020,24 +343,24 @@ textarea {
     width: 408px;
   }
 
-  .header__text {
+  .section-header {
     width: 100%;
   }
 
-  .img__text h3 {
+  .tour__info h3 {
     font-size: 35px;
   }
 
-  .name__and_price {
+  .tour__details {
     width: auto;
   }
 
-  .image__blocks {
+  .choose-image__blocks {
     grid-template-columns: repeat(2, 1fr);
     gap: 18px;
   }
 
-  .image__block {
+  .choose-image__block {
     width: 44vw;
   }
 
@@ -1051,10 +374,6 @@ textarea {
     height: 91%;
   }
 
-  .client__name {
-    width: 100%;
-  }
-
   form {
     margin: 62px 60px 60px 60px;
   }
@@ -1063,11 +382,11 @@ textarea {
     margin-top: -2px;
   }
 
-  .inputs_row {
+  .form__row {
     gap: 20px;
   }
 
-  .custom__checkbox {
+  .form__checkbox-icon {
     margin-right: 11px;
   }
 
@@ -1102,7 +421,7 @@ textarea {
     padding-right: 0;
   }
 
-  .image__block:hover .detail__button:not(.active) {
+  .choose-image__block:hover .detail__button:not(.active) {
     background-color: transparent;
     border-radius: 50px;
   }
@@ -1134,12 +453,12 @@ textarea {
     font-size: 18px;
   }
 
-  .choose__a__tour {
+  .choose-tour {
     margin-top: 75px;
   }
 
-  .block h2,
-  .choose__a__tour h2 {
+  .section-header__title,
+  .choose-tour h2 {
     font-size: 48px;
     letter-spacing: 1px;
   }
@@ -1152,7 +471,7 @@ textarea {
     margin-bottom: 60px;
   }
 
-  .image__blocks {
+  .choose-image__blocks {
     grid-template-columns: repeat(1, 1fr);
     gap: 18px;
     display: flex;
@@ -1165,33 +484,33 @@ textarea {
     margin-top: 0;
   }
 
-  .image__block,
+  .choose-image__block,
   .tour__img,
   .overlay {
     border-radius: 20px;
   }
 
-  .image__block {
+  .choose-image__block {
     width: 318px;
     height: 318px;
   }
 
-  .name__and_price {
+  .tour__details {
     width: 268px;
   }
 
-  .name__and_price p {
+  .tour__details p {
     font-size: 16px;
   }
 
-  .img__text h3 {
+  .tour__info h3 {
     font-size: 23px;
     margin-bottom: 13px;
     line-height: 120%;
     letter-spacing: 1px;
   }
 
-  .img__text {
+  .tour__info {
     padding: 25px;
   }
 
@@ -1208,21 +527,21 @@ textarea {
     margin-bottom: 0px;
   }
 
-  .choose__a__tour h2 {
+  .choose-tour h2 {
     font-size: 49px;
   }
 
-  .choose__a__tour ul {
+  .choose-tour ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  .nav__tour_block {
+  .choose-tour__nav-list {
     gap: 0px;
   }
 
-  .main__nav a {
+  .choose-tour__nav a {
     font-size: 18px;
   }
 
@@ -1238,10 +557,6 @@ textarea {
     font-size: 16px;
   }
 
-  .client__name {
-    width: 100%;
-  }
-
   input[type="text"],
   input[type="email"],
   input[type="tel"],
@@ -1253,7 +568,7 @@ textarea {
     padding: 10px;
   }
 
-  .inputs_row {
+  .form__row {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -1266,7 +581,7 @@ textarea {
     font-size: 16px;
   }
 
-  .direction {
+  .form__label {
     margin-bottom: 8px;
   }
 
@@ -1274,11 +589,11 @@ textarea {
     height: 132px;
   }
 
-  .age__question {
+  .form__fieldset {
     margin-bottom: 32px;
   }
 
-  .age__question legend {
+  .form__fieldset legend {
     font-size: 16px;
     margin-bottom: 8px;
   }
@@ -1287,26 +602,26 @@ textarea {
     margin-top: 30px;
   }
 
-  .radio__label {
+  .form__radio {
     font-size: 16px;
   }
 
-  .radio__label .custom__radio {
+  .form__radio .form__radio-icon {
     width: 20px;
     height: 20px;
   }
 
-  .contract__checkbox a {
+  .form__block--checkbox a {
     font-size: 16px;
   }
 
-  .contract__checkbox {
+  .form__block--checkbox {
     display: flex;
     align-items: flex-start;
     width: 100%;
   }
 
-  .checkbox__text {
+  .form__checkbox-text {
     font-size: 16px;
     line-height: 142%;
     letter-spacing: 0;
@@ -1324,21 +639,21 @@ textarea {
     font-size: 16px;
   }
 
-  .find__button {
+  .form__button--submit {
     margin-right: 10px;
   }
 
-  .custom__checkbox {
+  .form__checkbox-icon {
     width: 20px;
     height: 20px;
     margin-right: 10px;
   }
 
-  .contract__checkbox label {
+  .form__block--checkbox label {
     align-items: start;
   }
 
-  .radio__options {
+  .form__radios {
     margin-top: 2px;
   }
 
@@ -1443,7 +758,7 @@ textarea {
   }
 
   .email__block p,
-  .link__text {
+  .form__link {
     font-size: 16px;
     line-height: 22.72px;
     text-align: center;
@@ -1525,16 +840,16 @@ textarea {
     width: 390px;
   }
 
-  .main__nav {
+  .choose-tour__nav {
     margin-top: 24px;
   }
 
-  .main__nav a {
+  .choose-tour__nav a {
     font-size: 16px;
   }
 
-  .block h2,
-  .choose__a__tour h2 {
+  .section-header__title,
+  .choose-tour h2 {
     font-size: 38px;
     letter-spacing: 1px;
   }
@@ -1582,7 +897,7 @@ textarea {
     padding-bottom: 33px;
   }
 
-  .choose__a__tour ul {
+  .choose-tour ul {
     display: flex;
     justify-content: center;
     column-gap: 10px;
@@ -1622,26 +937,22 @@ textarea {
     align-items: center;
   }
 
-  .intro__button a {
+  .intro__button {
     font-size: 16px;
   }
 
-  .choose__a__tour {
+  .choose-tour {
     margin-top: 76px;
     margin-bottom: 75px;
   }
 
-  .choose__a__tour h2 {
+  .choose-tour h2 {
     font-size: 34px;
     line-height: 112%;
     letter-spacing: 2%;
   }
 
-  .choose__a__tour_text {
-    width: 100%;
-  }
-
-  .block h2 {
+  .section-header__title {
     font-size: 34px;
     font-weight: bold;
     line-height: 112%;
@@ -1649,7 +960,7 @@ textarea {
     margin-bottom: 20px;
   }
 
-  .contract__checkbox p {
+  .form__block--checkbox p {
     width: 80% !important;
     font-size: 16px;
   }
@@ -1658,10 +969,6 @@ textarea {
   select,
   input[type="date"] {
     font-size: 16px;
-  }
-
-  .direction {
-    margin-bottom: 8px;
   }
 
   .feedback__text {
@@ -1685,7 +992,7 @@ textarea {
     height: 110px;
   }
 
-  .image__blocks {
+  .choose-image__blocks {
     margin-top: 52px;
   }
 
@@ -1728,7 +1035,7 @@ textarea {
   }
 
   .email__block p,
-  .link__text {
+  .form__link {
     width: 291px;
   }
 
@@ -1736,30 +1043,3 @@ textarea {
     margin-top: 75px !important;
   }
 }
-
-/* <header class="header js-header">
-  <div class="header__container">
-    <div class="header__logo">
-      <a href="#headers" class="header__logo-link">YourTour</a>
-    </div>
-    <nav class="header__nav">
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a href="#tours" class="nav__link">Туры</a>
-        </li>
-        <li class="nav__item">
-          <a href="#create__tour" class="nav__link">Создать тур</a>
-        </li>
-        <li class="nav__item">
-          <a href="#reviews" class="nav__link">Отзывы</a>
-        </li>
-        <li class="nav__item">
-          <a href="#stories" class="nav__link">Истории</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="header__phone-block">
-      <a class="header__phone-number" href="tel:+79999999999">+7 999 999 99 99</a>
-    </div>
-  </div>
-</header> */

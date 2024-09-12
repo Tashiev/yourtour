@@ -1,0 +1,116 @@
+.choose-image__blocks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 106px;
+}
+
+.choose-image__block {
+  position: relative;
+  text-align: center;
+  border-radius: 50px;
+  overflow: hidden;
+  cursor: pointer;
+  max-width: 450px;
+  height: 531px;
+}
+
+.tour__img {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  transition: transform 300ms ease;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    360deg,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.06) 48.44%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+  border-radius: 50px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.tour__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 2;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  padding: 50px 50px 41px 50px;
+  box-sizing: border-box;
+  text-align: left;
+  bottom: 0;
+}
+
+.choose-image__block:hover .tour__img {
+  transform: scale(1.2);
+  z-index: 0;
+}
+
+.choose-image__block:hover .detail__button {
+  background-color: #286562;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.choose-image__block:active .detail__button {
+  background-color: #efa501;
+}
+
+.tour__info h3 {
+  color: white;
+  font-size: 35px;
+  font-weight: 500;
+  margin-bottom: 18px;
+  line-height: 122%;
+}
+
+.tour__details {
+  width: 200px;
+}
+
+.tour__details p {
+  font-size: 17px;
+  font-weight: 400;
+  color: white;
+}
+
+.detail__button_block {
+  margin-bottom: -7px;
+}
+
+.detail__button {
+  width: 200px;
+  height: 42px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  color: white;
+  font-size: 23px;
+  font-weight: bold;
+  border: none;
+  margin: 0;
+  margin-left: -20px;
+}
+
+.detail__button img {
+  margin-left: 16px;
+}
