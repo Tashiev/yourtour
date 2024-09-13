@@ -102,3 +102,66 @@
 .link__social:active {
   color: #efa501;
 }
+
+@media (max-width: 1024px) {
+  .stories__block:hover .detail__button:not(.active) {
+    background-color: transparent;
+    border-radius: 50px;
+  }
+
+  .stories__social-buttons a {
+    margin-left: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .stories__about-tour li {
+    font-size: 16px;
+  }
+
+  .stories__social-buttons {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .stories__about-tour {
+    margin: 45px;
+  }
+
+  .stories__block {
+    border-radius: 20px;
+  }
+}
+@media (max-width: 360px) {
+  .stories__about-tour {
+    margin: 30px;
+    height: calc(100% - 60px);
+    width: calc(100% - 60px);
+  }
+
+  .stories {
+    gap: 20px;
+  }
+
+  .stories__block {
+    border-radius: 20px;
+    height: 455px;
+  }
+
+  .stories__about-header {
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 28.6px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    width: 150px;
+  }
+
+  .stories__about-tour li {
+    line-height: 22.72px;
+    margin-left: 30px;
+  }
+
+  .stories__about-tour ul {
+    margin-top: 24px;
+  }
+}

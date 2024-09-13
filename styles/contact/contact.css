@@ -40,3 +40,51 @@
   text-decoration: underline;
   transition: 0.3s;
 }
+
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .contact-section__image {
+    width: 250px;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  .contact-section__email-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
+
+  .contact-section__title {
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 27.6px;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+  .contact-section__text {
+    font-size: 16px;
+    line-height: 22.72px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .contact-section__image {
+    width: 130px;
+    height: 133px;
+  }
+
+  .contact-section__text,
+  .form__link {
+    width: 291px;
+  }
+}

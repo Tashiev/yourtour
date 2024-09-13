@@ -84,3 +84,38 @@
   font-size: 40px;
   letter-spacing: 2.6px;
 }
+
+@media (max-width: 1024px) {
+  .nav__list {
+    width: 408px;
+  }
+}
+@media (max-width: 768px) {
+  .header__nav {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .header__logo a {
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 1.6px;
+  }
+}
+@media (max-width: 360px) {
+  .header {
+    padding-top: 0;
+  }
+
+  .header___phone a {
+    font-size: 16px;
+  }
+
+  .header__block {
+    margin-top: 26px !important;
+  }
+
+  .header.fixed {
+    padding-bottom: 33px;
+  }
+}

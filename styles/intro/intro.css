@@ -56,3 +56,63 @@
   background-color: #f8e6be;
   color: black;
 }
+
+@media (max-width: 1024px) {
+  .intro p {
+    width: 442px;
+  }
+}
+@media (max-width: 768px) {
+  .intro h1 {
+    font-size: 74px;
+  }
+
+  .intro p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .intro {
+    height: 488px;
+  }
+
+  .intro h1 {
+    font-size: 48px;
+    width: 400px;
+  }
+
+  .intro p {
+    font-size: 18px;
+    width: 390px;
+  }
+}
+@media (max-width: 360px) {
+  .intro {
+    height: 488px;
+    padding: 57px 0 400px;
+  }
+
+  .intro h1 {
+    font-size: 34px;
+    width: 360px;
+    line-height: 38.08px;
+    letter-spacing: 1px;
+    margin-top: 83px;
+  }
+
+  .intro p {
+    font-size: 16px;
+    width: 310px;
+    margin: 40px 0 39px 0;
+  }
+
+  .intro__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro__button {
+    font-size: 16px;
+  }
+}
