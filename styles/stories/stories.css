@@ -1,0 +1,104 @@
+.stories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.stories__block {
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  width: auto;
+  max-width: 1170px;
+  border-radius: 50px;
+  height: 567px;
+  overflow: hidden;
+  background: linear-gradient(
+    270deg,
+    rgba(0, 0, 0, 0) 0.01%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+}
+
+.stories__about-tour {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 60px;
+  position: absolute;
+  text-align: left;
+  z-index: 2;
+  height: calc(100% - 120px);
+  width: calc(100% - 120px);
+}
+
+.stories__about-text {
+  flex-shrink: 0;
+}
+
+.stories__about-header {
+  font-size: 35px;
+  font-weight: 500;
+  color: white;
+  line-height: 122%;
+  margin-bottom: 37px;
+}
+
+.stories__about-tour p {
+  font-size: 20px;
+  line-height: 142%;
+  color: white;
+  max-width: 554px;
+}
+
+.stories__about-tour ul {
+  margin-top: 28px;
+}
+
+.stories__about-tour li {
+  color: white;
+  margin-left: 30px;
+  line-height: 1.4;
+}
+
+.stories__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.stories__social-buttons a {
+  color: white;
+  margin-left: 35px;
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.stories__social-buttons a:hover {
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.stories__block:hover .tour__img {
+  transform: scale(1.2);
+}
+
+.stories__block:hover .detail__button {
+  background-color: #286562;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.stories__block:hover .detail__button:active {
+  border-radius: 50px;
+}
+
+.stories__block:active .detail__button {
+  background-color: #efa501;
+}
+
+.link__social:active {
+  color: #efa501;
+}

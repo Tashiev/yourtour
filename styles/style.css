@@ -7,111 +7,7 @@
 @import "./form/form.css";
 @import "./reviews/reviews.css";
 @import "./gallery/gallery.css";
-
-.story__blocks {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 50px;
-}
-
-.story__block {
-  cursor: pointer;
-  display: flex;
-  position: relative;
-  width: auto;
-  max-width: 1170px;
-  border-radius: 50px;
-  height: 567px;
-  overflow: hidden;
-  background: linear-gradient(
-    270deg,
-    rgba(0, 0, 0, 0) 0.01%,
-    rgba(0, 0, 0, 0.2) 100%
-  );
-}
-
-.about__tour {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 60px;
-  position: absolute;
-  text-align: left;
-  z-index: 2;
-  height: calc(100% - 120px);
-  width: calc(100% - 120px);
-}
-
-.about__tour_text {
-  flex-shrink: 0;
-}
-
-.about__tour_text_header {
-  font-size: 35px;
-  font-weight: 500;
-  color: white;
-  line-height: 122%;
-  margin-bottom: 37px;
-}
-
-.about__tour p {
-  font-size: 20px;
-  line-height: 142%;
-  color: white;
-  max-width: 554px;
-}
-
-.about__tour ul {
-  margin-top: 28px;
-}
-
-.about__tour li {
-  color: white;
-  margin-left: 30px;
-  line-height: 1.4;
-}
-
-.buttons__block {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  width: 100%;
-}
-
-.social__buttons_block a {
-  color: white;
-  margin-left: 35px;
-  font-weight: 400;
-  font-size: 20px;
-  text-decoration: none;
-}
-
-.social__buttons_block a:hover {
-  text-decoration: underline;
-  transition: 0.3s;
-}
-
-.story__block:hover .tour__img {
-  transform: scale(1.2);
-}
-
-.story__block:hover .detail__button {
-  background-color: #286562;
-  border-radius: 50px;
-  transition: 0.3s;
-}
-
-.story__block:hover .detail__button:active {
-  border-radius: 50px;
-}
-
-.story__block:active .detail__button {
-  background-color: #efa501;
-}
-
-.link__social:active {
-  color: #efa501;
-}
+@import "./stories/stories.css";
 
 .footer__contact {
   display: flex;
@@ -297,12 +193,12 @@
     border-radius: 50px;
   }
 
-  .story__block:hover .detail__button:not(.active) {
+  .stories__block:hover .detail__button:not(.active) {
     background-color: transparent;
     border-radius: 50px;
   }
 
-  .social__buttons_block a {
+  .stories__social-buttons a {
     margin-left: 30px;
   }
 }
@@ -394,7 +290,7 @@
     align-items: end;
   }
 
-  .buttons__block button {
+  .stories__buttons button {
     margin-bottom: 0px;
   }
 
@@ -598,11 +494,11 @@
     border-radius: 20px;
   }
 
-  .about__tour li {
+  .stories__about-tour li {
     font-size: 16px;
   }
 
-  .social__buttons_block {
+  .stories__social-buttons {
     display: none;
   }
 
@@ -745,11 +641,11 @@
     margin: 12px 0 12px;
   }
 
-  .about__tour {
+  .stories__about-tour {
     margin: 45px;
   }
 
-  .story__block {
+  .stories__block {
     border-radius: 20px;
   }
 }
@@ -867,22 +763,22 @@
     margin-top: 52px;
   }
 
-  .about__tour {
+  .stories__about-tour {
     margin: 30px;
     height: calc(100% - 60px);
     width: calc(100% - 60px);
   }
 
-  .story__blocks {
+  .stories {
     gap: 20px;
   }
 
-  .story__block {
+  .stories__block {
     border-radius: 20px;
     height: 455px;
   }
 
-  .about__tour_text_header {
+  .stories__about-header {
     font-size: 23px;
     font-weight: 700;
     line-height: 28.6px;
@@ -891,12 +787,12 @@
     width: 150px;
   }
 
-  .about__tour li {
+  .stories__about-tour li {
     line-height: 22.72px;
     margin-left: 30px;
   }
 
-  .about__tour ul {
+  .stories__about-tour ul {
     margin-top: 24px;
   }
 
