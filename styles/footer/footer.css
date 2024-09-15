@@ -6,7 +6,6 @@
   justify-content: space-evenly;
   align-items: center;
   padding: 30px 53px;
-  margin-top: -3px;
 }
 
 .footer__container {
@@ -17,7 +16,6 @@
 .footer__container-text {
   font-size: 20px;
   color: #a6a6a6;
-  width: auto !important;
 }
 
 .footer__socials {
@@ -59,15 +57,12 @@
   .footer__container {
     display: flex;
     flex-direction: column;
-    padding: 21px 21.5px 21px 21.5px;
-    margin-top: 0 !important;
   }
 
   .footer__socials {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: 7px;
   }
 
   .footer__container-text {
@@ -86,8 +81,12 @@
     width: 100%;
   }
 }
+
 @media (max-width: 360px) {
-  .footer {
-    margin-top: 75px !important;
+  .footer__container-text {
+    margin-bottom: 7px;
+  }
+  .contact-section__text a {
+    font-size: 16px;
   }
 }

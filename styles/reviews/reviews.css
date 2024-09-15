@@ -71,6 +71,20 @@
   border-radius: 100%;
 }
 
+@media (max-width: 962px) {
+  .reviews__card p {
+    font-size: 20px;
+  }
+
+  .reviews__author h3 {
+    font-size: 28px;
+  }
+
+  .reviews__author p {
+    font-size: 16px;
+  }
+}
+
 @media (max-width: 1024px) {
   .reviews__item {
     width: 450px;
@@ -91,7 +105,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10px;
   }
 
   .reviews__item {

@@ -27,17 +27,24 @@
   }
 }
 @media (max-width: 768px) {
-  .section-header__title,
-  .choose-tour h2 {
+  .section-header__title {
     font-size: 48px;
     letter-spacing: 1px;
   }
+
+  .section-header__description {
+    font-size: 16px;
+    margin-bottom: 60px;
+  }
 }
 @media (max-width: 480px) {
-  .section-header__title,
-  .choose-tour h2 {
+  .section-header__title {
     font-size: 38px;
     letter-spacing: 1px;
+  }
+
+  .section-header__description {
+    margin-bottom: 50px;
   }
 }
 @media (max-width: 360px) {

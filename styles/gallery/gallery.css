@@ -27,7 +27,7 @@
   min-height: 110px;
 }
 
-.travel__picture_second {
+.travel-images-second-line {
   width: 100%;
   max-width: 347.32px;
   min-width: 99.33px;
@@ -68,7 +68,7 @@
 
   #second-travel-picture,
   #seventh-travel-picture,
-  #twelfth-travel-picture {
+  #thirteenth-travel-picture {
     display: none;
   }
 
@@ -94,7 +94,7 @@
 
   #third-travel-picture,
   #sixth-travel-picture,
-  #eleventh-travel-picture {
+  #twelfth-travel-picture {
     display: none;
   }
 

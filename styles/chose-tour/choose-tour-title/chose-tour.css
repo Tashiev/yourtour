@@ -85,6 +85,11 @@
   .choose-tour__nav a {
     font-size: 16px;
   }
+
+  .choose-tour h2 {
+    font-size: 38px;
+    letter-spacing: 1px;
+  }
 }
 @media (max-width: 360px) {
   .choose-tour ul {
