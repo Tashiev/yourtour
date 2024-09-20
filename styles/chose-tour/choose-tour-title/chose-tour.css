@@ -41,20 +41,21 @@
   line-height: 22.72px;
   color: #efa501;
   border-bottom: 2px solid #efa501;
+  padding-bottom: 5px;
 }
 
 .choose-tour__nav-item:hover {
   border-bottom: 2px solid black;
+  padding-bottom: 5px;
   transition: 0.3s;
 }
 
 .choose-tour__nav-item:active {
   border-bottom: 2px solid #efa501;
+  padding-bottom: 5px;
   color: #efa501;
 }
 
-@media (max-width: 1024px) {
-}
 @media (max-width: 768px) {
   .choose-tour {
     margin-top: 75px;
@@ -77,6 +78,7 @@
     font-size: 18px;
   }
 }
+
 @media (max-width: 480px) {
   .choose-tour__nav {
     margin-top: 24px;
@@ -91,6 +93,7 @@
     letter-spacing: 1px;
   }
 }
+
 @media (max-width: 360px) {
   .choose-tour ul {
     display: flex;
