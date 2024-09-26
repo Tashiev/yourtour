@@ -35,6 +35,7 @@ document.onscroll = function () {
   if (scroll > headerH) {
     fixedHeder.style.marginTop = "0";
     header.classList.add("fixed");
+    //этот класс не существует! разобраться и удалить
     headerNav.forEach((nav) => nav.classList.add("fixed2"));
     phone.classList.add("fixedPhoneColor");
     phoneElement.style.color = "black";
@@ -46,6 +47,7 @@ document.onscroll = function () {
     });
   } else {
     header.classList.remove("fixed");
+    //этот класс не существует! разобраться и удалить
     headerNav.forEach((nav) => nav.classList.remove("fixed2"));
     phone.classList.remove("fixedPhoneColor");
     logoElement.style.color = "white";
