@@ -38,7 +38,10 @@
 
 .contact-section__link:hover {
   text-decoration: underline;
-  transition: 0.3s;
+}
+
+.contact-section__link:active {
+  color: #286562;
 }
 
 @media (max-width: 768px) {

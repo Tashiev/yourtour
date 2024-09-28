@@ -13,10 +13,19 @@
   border-radius: 50px;
   height: 567px;
   overflow: hidden;
+}
+
+.stories__block-overlay {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: linear-gradient(
     270deg,
     rgba(0, 0, 0, 0) 0.01%,
-    rgba(0, 0, 0, 0.2) 100%
+    rgba(0, 0, 0, 0.1) 100%
   );
 }
 
@@ -79,8 +88,13 @@
 }
 
 .stories__social-buttons a:hover {
-  text-decoration: underline;
-  transition: 0.3s;
+  border-bottom: 1px solid white;
+  padding-bottom: 2px;
+}
+
+.stories__social-buttons a:active {
+  border-bottom: 1px solid #efa501;
+  padding-bottom: 2px;
 }
 
 .stories__block:hover .tour__img {

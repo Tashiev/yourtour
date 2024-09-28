@@ -196,7 +196,10 @@ textarea {
 
 .form__checkbox-text a:hover {
   text-decoration: underline;
-  transition: 0.3s;
+}
+
+.form__checkbox-text a:active {
+  color: #286562;
 }
 
 .form__block--checkbox input[type="checkbox"] {

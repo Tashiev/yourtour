@@ -27,9 +27,9 @@
 }
 
 .footer__social-link {
+  display: flex;
   margin-right: 25px;
   text-decoration: none;
-  display: flex;
 }
 
 .footer__social-link:last-child {
