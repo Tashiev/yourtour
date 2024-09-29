@@ -14,19 +14,22 @@ body {
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1230px;
   width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   text-align: center;
+
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .block {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 134px;
+  margin-top: 136px;
   height: auto;
 }
 
@@ -36,7 +39,8 @@ button {
 
 @media (max-width: 1024px) {
   .container {
-    width: 90%;
+    padding-left: 53px;
+    padding-right: 53px;
   }
 }
 

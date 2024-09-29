@@ -1,9 +1,8 @@
 const fixedHeder = document.querySelector(".header");
 const header = document.querySelector(".js-header");
 const headerH = 450;
-const headerNav = document.querySelectorAll(".nav__names");
 const phone = document.querySelector(".header___phone_number");
-const logoElement = document.querySelector(".header__logo a");
+const logoElement = document.querySelector(".header__logo img");
 const phoneElement = document.querySelector(".header___phone");
 const liElements = document.querySelectorAll(".nav__link");
 const anchors = document.querySelectorAll('a[href*="#"]');
@@ -13,7 +12,6 @@ const header__block = document.querySelector(".header__block");
 const email = document.getElementById("email");
 
 const phoneInput = document.querySelector(".form__input-phone");
-// const phoneInput = document.querySelector(".phone");
 const phoneMask = new IMask(phoneInput, {
   mask: "+{7}(000)000-00-00",
 });
@@ -33,13 +31,10 @@ document.onscroll = function () {
   let scroll = window.scrollY;
 
   if (scroll > headerH) {
-    fixedHeder.style.marginTop = "0";
     header.classList.add("fixed");
-    //этот класс не существует! разобраться и удалить
-    headerNav.forEach((nav) => nav.classList.add("fixed2"));
     phone.classList.add("fixedPhoneColor");
     phoneElement.style.color = "black";
-    logoElement.style.color = "black";
+    logoElement.src = "./assets/logo-black.svg";
     header__block.style.marginTop = "0";
     liElements.forEach((li) => {
       li.classList.add("black");
@@ -47,12 +42,10 @@ document.onscroll = function () {
     });
   } else {
     header.classList.remove("fixed");
-    //этот класс не существует! разобраться и удалить
-    headerNav.forEach((nav) => nav.classList.remove("fixed2"));
     phone.classList.remove("fixedPhoneColor");
-    logoElement.style.color = "white";
+    logoElement.src = "./assets/logo-white.svg";
     phoneElement.style.color = "white";
-    header__block.style.marginTop = "21px";
+    header__block.style.marginTop = "28.8px";
     liElements.forEach((li) => {
       li.classList.remove("black");
       li.style.color = "white";

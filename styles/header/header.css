@@ -14,7 +14,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 21px;
+  margin-top: 28.8px;
 }
 
 .header.fixed {
@@ -71,21 +71,16 @@
   color: white;
 }
 
-.header___phone a,
-.header__logo a {
+.header___phone a {
   color: white;
   text-decoration: none;
 }
 
-.header__logo a {
-  display: block;
-
-  font-weight: 700;
-  font-size: 40px;
-  letter-spacing: 2.6px;
-}
-
 @media (max-width: 1024px) {
+  .header__block {
+    margin: 21px 4px 0 4px;
+  }
+
   .nav__list {
     width: 408px;
   }
@@ -96,12 +91,12 @@
   }
 }
 @media (max-width: 480px) {
-  .header__logo a {
-    font-weight: 700;
-    font-size: 30px;
-    letter-spacing: 1.6px;
+  .header__logo img {
+    width: 133px;
+    height: 22px;
   }
 }
+
 @media (max-width: 360px) {
   .header {
     padding-top: 0;
