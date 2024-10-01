@@ -9,14 +9,14 @@
 .section-header__title {
   font-size: 59px;
   font-weight: 700;
-  line-height: 124%;
+  line-height: 73.16px;
   margin-bottom: 30px;
 }
 
 .section-header__description {
   width: 100%;
   font-size: 20px;
-  margin-bottom: 98px;
+  margin-bottom: 100px;
   color: #a6a6a6;
   line-height: 28px;
 }
@@ -54,5 +54,9 @@
     line-height: 112%;
     letter-spacing: 0.7px;
     margin-bottom: 20px;
+  }
+
+  .section-header__description {
+    line-height: 22.72px;
   }
 }

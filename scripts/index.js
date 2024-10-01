@@ -7,7 +7,7 @@ const phoneElement = document.querySelector(".header___phone");
 const liElements = document.querySelectorAll(".nav__link");
 const anchors = document.querySelectorAll('a[href*="#"]');
 
-const header__block = document.querySelector(".header__block");
+// const header__block = document.querySelector(".header__block");
 
 const email = document.getElementById("email");
 
@@ -35,7 +35,7 @@ document.onscroll = function () {
     phone.classList.add("fixedPhoneColor");
     phoneElement.style.color = "black";
     logoElement.src = "./assets/logo-black.svg";
-    header__block.style.marginTop = "0";
+    // header__block.style.marginTop = "0";
     liElements.forEach((li) => {
       li.classList.add("black");
       li.style.color = "black";
@@ -45,7 +45,7 @@ document.onscroll = function () {
     phone.classList.remove("fixedPhoneColor");
     logoElement.src = "./assets/logo-white.svg";
     phoneElement.style.color = "white";
-    header__block.style.marginTop = "28.8px";
+    // header__block.style.marginTop = "28.8px";
     liElements.forEach((li) => {
       li.classList.remove("black");
       li.style.color = "white";

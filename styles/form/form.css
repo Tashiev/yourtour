@@ -33,7 +33,6 @@ select {
   -moz-appearance: none;
   -webkit-appearance: none;
   background: url("../../assets/ic-dropdown.svg") no-repeat right 23.59px center;
-  background-size: 18px;
 }
 
 input[type="text"],
@@ -211,7 +210,7 @@ textarea {
   height: 26px;
   border: 2px solid #000;
   border-radius: 5px;
-  margin-right: 19px;
+  margin-right: 21px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -289,12 +288,12 @@ textarea {
   }
 
   .form__checkbox-icon {
-    margin-right: 11px;
+    margin-right: 13px;
   }
 }
 @media (max-width: 768px) {
   form {
-    margin: 20px 20px 40px 20px;
+    margin: 23px 20px 40px 20px;
   }
 
   .form {
@@ -311,7 +310,7 @@ textarea {
   input[type="date"],
   select {
     width: 100%;
-    margin-bottom: 35px;
+    margin-bottom: 34.6px;
     height: 43px;
     padding: 10px;
   }
@@ -343,7 +342,7 @@ textarea {
 
   .form__fieldset legend {
     font-size: 16px;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
   }
 
   .form__radio {
@@ -398,19 +397,25 @@ textarea {
     align-items: start;
   }
 
-  .form__radios {
-    margin-top: 2px;
-  }
-
   .detail__button {
     align-items: center;
   }
-}
-/* @media (max-width: 480px) {
-  .section-header__description-form {
-    margin-bottom: 40px;
+
+  .form__checkbox-text a:hover {
+    text-decoration: none;
   }
-} */
+
+  .form__button--submit:hover {
+    background-color: #286562;
+    transition: 0.3s;
+  }
+
+  .form__button--reset:hover {
+    background-color: #e0f0e5;
+    transition: 0.3s;
+  }
+}
+
 @media (max-width: 360px) {
   .form__block--checkbox p {
     width: 80% !important;
@@ -421,5 +426,13 @@ textarea {
   select,
   input[type="date"] {
     font-size: 16px;
+  }
+
+  select {
+    background: url("../../assets/ic-dropdown.svg") no-repeat right 9px center;
+  }
+
+  .form__radio .form__radio-icon {
+    margin-right: 10px;
   }
 }

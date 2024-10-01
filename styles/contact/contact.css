@@ -3,6 +3,12 @@
   gap: 30px;
 }
 
+.contact-section__image-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .contact-section__image {
   width: 370px;
   height: 370px;
@@ -62,6 +68,11 @@
     justify-content: center;
     width: 100%;
     align-items: center;
+    margin-top: 2px;
+  }
+
+  .contact-section__title {
+    margin-bottom: 22px;
   }
 
   .contact-section__title {
@@ -77,6 +88,10 @@
     line-height: 22.72px;
     text-align: center;
     width: 100%;
+  }
+
+  .contact-section__link:hover {
+    text-decoration: none;
   }
 }
 

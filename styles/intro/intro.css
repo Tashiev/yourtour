@@ -22,7 +22,6 @@
   color: white;
   line-height: 109%;
   letter-spacing: 2px;
-  /* max-width: 768px; */
 }
 
 .intro p {
@@ -38,8 +37,7 @@
 .intro__button {
   font-size: 17px;
   font-weight: 400;
-  letter-spacing: -1%;
-  line-height: 142%;
+  line-height: 24.14px;
   text-decoration: none;
   cursor: pointer;
   padding: 4.5px 20px;
@@ -74,6 +72,11 @@
     font-size: 18px;
     width: 54%;
   }
+
+  .intro__button:hover {
+    background-color: white;
+    color: black;
+  }
 }
 
 @media (max-width: 480px) {
@@ -102,8 +105,8 @@
     font-size: 34px;
     width: 360px;
     line-height: 38.08px;
-    letter-spacing: 1px;
-    margin-top: 83px;
+    letter-spacing: 0.6px;
+    margin-top: 84px;
   }
 
   .intro p {
@@ -120,6 +123,6 @@
 
   .intro__button {
     font-size: 16px;
-    padding: 5.5px 20px;
+    padding: 4.8px 20px;
   }
 }
