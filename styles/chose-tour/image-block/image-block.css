@@ -7,22 +7,21 @@
 
 .choose-image__block {
   position: relative;
+  max-width: 450px;
+  height: 531px;
   text-align: center;
   border-radius: 50px;
   overflow: hidden;
   cursor: pointer;
-  max-width: 450px;
-  height: 531px;
 }
 
 .tour__img {
   position: relative;
-  z-index: 0;
   width: 100%;
   height: 100%;
-  border-radius: 50px;
-  transition: transform 300ms ease;
+  z-index: 0;
   object-fit: cover;
+  transition: transform 300ms ease;
 }
 
 .overlay {

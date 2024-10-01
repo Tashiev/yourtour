@@ -53,6 +53,15 @@ select {
   resize: none;
 }
 
+select {
+  background-color: #f9f7f4 !important;
+}
+
+.form__input-date--placeholder {
+  color: #a6a6a6;
+  border-color: #a6a6a6;
+}
+
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus,
@@ -60,6 +69,17 @@ input[type="date"]:focus,
 select:focus,
 textarea:focus {
   border-color: #a6a6a6;
+  outline: none;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="tel"]:hover,
+input[type="date"]:hover,
+select:hover,
+textarea:hover {
+  border-color: #a6a6a6;
+  background-color: #f4f0e9;
 }
 
 input[type="date"] {
@@ -206,11 +226,11 @@ textarea {
 }
 
 .form__checkbox-icon {
-  width: 26px;
+  width: 28px;
   height: 26px;
   border: 2px solid #000;
   border-radius: 5px;
-  margin-right: 21px;
+  margin-right: 20px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -288,7 +308,7 @@ textarea {
   }
 
   .form__checkbox-icon {
-    margin-right: 13px;
+    margin-right: 11px;
   }
 }
 @media (max-width: 768px) {
@@ -313,6 +333,16 @@ textarea {
     margin-bottom: 34.6px;
     height: 43px;
     padding: 10px;
+  }
+
+  input[type="text"]:hover,
+  input[type="email"]:hover,
+  input[type="tel"]:hover,
+  input[type="date"]:hover,
+  select:hover,
+  textarea:hover {
+    border-color: #f4f0e9;
+    background-color: #f9f7f4;
   }
 
   .form__row {
