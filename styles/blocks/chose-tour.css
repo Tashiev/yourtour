@@ -1,6 +1,4 @@
 .choose-tour {
-  display: flex;
-  justify-content: space-around;
   flex-direction: column;
   align-items: center;
   margin-top: 135px;
@@ -44,10 +42,24 @@
   padding-bottom: 5px;
 }
 
-.choose-tour__nav-item:hover {
-  border-bottom: 2px solid black;
-  padding-bottom: 5px;
-  transition: 0.3s;
+.choose-tour__nav-item::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  bottom: -6px;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.choose-tour__nav-item:hover::after {
+  transform: scaleX(1);
+}
+
+.choose-tour__nav-item:active::after {
+  background-color: transparent;
 }
 
 .choose-tour__nav-item:active {

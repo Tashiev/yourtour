@@ -103,6 +103,6 @@
 
   .contact-section__text,
   .form__link {
-    width: 291px;
+    max-width: 291px;
   }
 }

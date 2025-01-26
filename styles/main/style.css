@@ -1,0 +1,13 @@
+@import '../main/body.css';
+@import '../blocks/header.css';
+@import '../blocks/intro.css';
+@import '../blocks/chose-tour.css';
+@import '../blocks/image-block.css';
+@import '../blocks/title.css';
+@import '../blocks/description.css';
+@import '../blocks/form.css';
+@import '../blocks/reviews.css';
+@import '../blocks/gallery.css';
+@import '../blocks/stories.css';
+@import '../blocks/contact.css';
+@import '../blocks/footer.css';

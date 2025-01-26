@@ -1,13 +1,9 @@
 .travel-images {
   max-width: 100%;
-
-  padding-right: 30px;
-  padding-left: 30px;
+  padding: 0 30px;
 }
 
 .travel-images__box {
-  width: 444px;
-  height: 100%;
   max-height: 301px;
   min-height: 110px;
 }
@@ -15,8 +11,6 @@
 .travel-images__picture {
   width: 100%;
   max-width: 444px;
-  min-width: 150px;
-
   object-fit: cover;
 }
 
@@ -30,8 +24,6 @@
 .travel-images-second-line {
   width: 100%;
   max-width: 347.32px;
-  min-width: 99.33px;
-
   object-fit: cover;
 }
 
@@ -62,8 +54,7 @@
   }
 
   .travel-images {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding: 0 20px;
   }
 
   #second-travel-picture,
@@ -122,14 +113,6 @@
   }
 }
 @media (max-width: 360px) {
-  .travel-images__row {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
-
-  .travel-images__row--second {
-    grid-template-columns: repeat(auto-fit, minmax(99px, 1fr));
-  }
-
   .travel-images__row img,
   .travel-images__row--second img {
     height: 110px;
