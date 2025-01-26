@@ -89,7 +89,7 @@
 
 .stories__social-buttons a {
   color: white;
-  padding-left: 30px;
+  margin-left: 30px;
   font-weight: 400;
   font-size: 20px;
   text-decoration: none;
@@ -147,10 +147,6 @@
   .stories__block:hover .detail__button:not(.active) {
     background-color: transparent;
     border-radius: 50px;
-  }
-
-  .stories__social-buttons a {
-    padding-left: 30px;
   }
 }
 
