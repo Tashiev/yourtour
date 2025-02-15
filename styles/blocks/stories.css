@@ -54,18 +54,18 @@
 }
 
 .stories__about-header {
+  margin-bottom: 37px;
   font-size: 35px;
   font-weight: 500;
   color: white;
   line-height: 122%;
-  margin-bottom: 37px;
 }
 
 .stories__about-tour p {
+  max-width: 554px;
   font-size: 20px;
   line-height: 142%;
   color: white;
-  max-width: 554px;
 }
 
 .stories__about-tour ul {
@@ -93,11 +93,11 @@
 }
 
 .stories__social-buttons a {
+  position: relative;
+  text-decoration: none;
   color: white;
   font-weight: 400;
   font-size: 20px;
-  text-decoration: none;
-  position: relative;
 }
 
 .stories__social-buttons a::after {
@@ -121,8 +121,8 @@
 }
 
 .stories__social-buttons a:active {
-  border-bottom: 1px solid #efa501;
   padding-bottom: 2px;
+  border-bottom: 1px solid #efa501;
 }
 
 .stories__block:hover .tour__img {
@@ -170,9 +170,9 @@
 
 @media (max-width: 480px) {
   .stories__about-header {
+    margin-bottom: 27px;
     font-size: 29px;
     font-weight: 600;
-    margin-bottom: 27px;
   }
 
   .stories__about-tour p {
@@ -203,12 +203,12 @@
   }
 
   .stories__about-header {
+    width: 150px;
+    margin-bottom: 20px;
     font-size: 23px;
     font-weight: 700;
     line-height: 28.6px;
     letter-spacing: 1px;
-    margin-bottom: 20px;
-    width: 150px;
   }
 
   .stories__about-tour li {

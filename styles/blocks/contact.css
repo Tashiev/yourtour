@@ -23,19 +23,19 @@
 }
 
 .contact-section__title {
+  text-align: left;
+  margin-bottom: 20px;
   font-size: 35px;
   font-weight: 500;
   line-height: 122%;
-  text-align: left;
-  margin-bottom: 20px;
 }
 
 .contact-section__text {
+  width: 364px;
+  text-align: left;
   font-size: 20px;
   line-height: 142%;
   color: #a6a6a6;
-  text-align: left;
-  width: 364px;
 }
 
 .contact-section__link {
@@ -89,18 +89,18 @@
   }
 
   .contact-section__title {
+    text-align: center;
     font-size: 23px;
     font-weight: 700;
     line-height: 27.6px;
     letter-spacing: 1px;
-    text-align: center;
   }
 
   .contact-section__text {
+    width: 100%;
     font-size: 16px;
     line-height: 22.72px;
     text-align: center;
-    width: 100%;
   }
 
   .contact-section__link:hover {

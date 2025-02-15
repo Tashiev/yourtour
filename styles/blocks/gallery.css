@@ -57,9 +57,9 @@
     padding: 0 20px;
   }
 
-  #second-travel-picture,
-  #seventh-travel-picture,
-  #thirteenth-travel-picture {
+  .second-travel-picture,
+  .seventh-travel-picture,
+  .thirteenth-travel-picture {
     display: none;
   }
 
@@ -74,6 +74,7 @@
     border-radius: 50px;
   }
 }
+
 @media (max-width: 768px) {
   .travel-images {
     margin-top: 0;
@@ -95,6 +96,7 @@
     border-radius: 20px;
   }
 }
+
 @media (max-width: 480px) {
   .travel-images__row,
   .travel-images__row--second {
@@ -112,6 +114,7 @@
     margin: 12px 0 12px;
   }
 }
+
 @media (max-width: 360px) {
   .travel-images__row img,
   .travel-images__row--second img {

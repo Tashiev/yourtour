@@ -126,9 +126,9 @@ textarea {
 }
 
 .form__fieldset legend {
-  font-size: 20px;
-  margin-bottom: 12px;
   display: block;
+  margin-bottom: 12px;
+  font-size: 20px;
 }
 
 .form__radios {
@@ -207,11 +207,11 @@ textarea {
 }
 
 .form__block--checkbox p {
+  width: 100%;
   font-size: 17px;
   line-height: 142%;
   letter-spacing: -0.2px;
   color: #a6a6a6;
-  width: 100%;
 }
 
 .form__checkbox-text a {
@@ -393,8 +393,8 @@ textarea {
   }
 
   .form__fieldset legend {
-    font-size: 16px;
     margin-bottom: 12px;
+    font-size: 16px;
   }
 
   .form__radio {
