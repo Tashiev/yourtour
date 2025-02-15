@@ -87,9 +87,13 @@
   align-items: center;
 }
 
+.stories__social-buttons {
+  display: flex;
+  gap: 35px;
+}
+
 .stories__social-buttons a {
   color: white;
-  margin-left: 30px;
   font-weight: 400;
   font-size: 20px;
   text-decoration: none;

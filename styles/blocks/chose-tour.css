@@ -2,6 +2,11 @@
   flex-direction: column;
   align-items: center;
   margin-top: 135px;
+  text-align: center;
+}
+
+.choose-tour:first-of-type {
+  text-align: center;
 }
 
 .choose-tour h2 {
