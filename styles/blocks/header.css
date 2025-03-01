@@ -4,7 +4,6 @@
   left: 0;
   right: 0;
   z-index: 3;
-  transition: all 0.2s ease;
 }
 
 .header__block {

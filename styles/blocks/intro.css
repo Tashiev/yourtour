@@ -98,7 +98,7 @@
   }
 
   .intro p {
-    margin: 40px 0 40px 0;
+    margin: 40px 0;
     font-size: 16px;
   }
 
@@ -109,7 +109,7 @@
   }
 
   .intro__button {
-    padding: 4.8px 20px;
+    padding: 5px 20px;
     font-size: 16px;
   }
 }
